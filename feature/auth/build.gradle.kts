@@ -40,6 +40,8 @@ android {
 }
 
 dependencies {
+    implementation(projects.uiToolkit)
+
     implementation(libs.androidx.activity.compose)
     implementation(libs.compose.navigation)
     implementation(platform(libs.androidx.compose.bom))
