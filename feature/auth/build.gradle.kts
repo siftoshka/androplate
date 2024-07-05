@@ -40,6 +40,7 @@ android {
 }
 
 dependencies {
+    implementation(projects.core)
     implementation(projects.uiToolkit)
 
     implementation(libs.androidx.activity.compose)
@@ -49,6 +50,7 @@ dependencies {
 
     implementation(libs.hilt.core)
     implementation(libs.hilt.android)
+    implementation(libs.hilt.navigation)
     kapt(libs.hilt.android.compiler)
 
     implementation(libs.androidx.core.ktx)
@@ -57,4 +59,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
 }
